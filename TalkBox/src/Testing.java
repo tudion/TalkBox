@@ -6,6 +6,7 @@ public class Testing {
 		System.out.println("Fun with Git!");
 		System.out.println("More fun with the push!");
 		System.out.println("Now im just playing around...");
+		System.out.println("Just another test");
 	}
 
 }
