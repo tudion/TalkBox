@@ -8,6 +8,7 @@ public class Testing {
 		System.out.println("Now im just playing around...test 1");
 		System.out.println("Just another test");
 		System.out.println("try pulling this");
+		System.out.println("push test");
 	}
 
 }
