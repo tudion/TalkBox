@@ -41,7 +41,6 @@ public interface TalkBoxConfiguration extends Serializable {
      * @return Path A Path object that identifies the directory that contains the audio files
      */
     public Path getRelativePathToAudioFiles();
-    //happy birthday 
     
     /**
      * Returns a 2-dimensional array of Strings that contains the names of all audio files.
