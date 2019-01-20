@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
 
 public class TestGui {
 
@@ -49,11 +50,10 @@ public class TestGui {
 		frmTalkbox.setTitle("TalkBox V1.0");
 		frmTalkbox.setBounds(100, 100, 450, 300);
 		frmTalkbox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		JPanel panel = new JPanel();
-		frmTalkbox.getContentPane().add(panel, BorderLayout.NORTH);
+		frmTalkbox.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JButton btnAudio1 = new JButton("Audio 1");
+		frmTalkbox.getContentPane().add(btnAudio1);
 		btnAudio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
 				try {
@@ -71,7 +71,9 @@ public class TestGui {
 				}
 			}
 		});
-		panel.add(btnAudio1);
+		
+		JPanel panel = new JPanel();
+		frmTalkbox.getContentPane().add(panel);
 		
 		JButton btnAudio2 = new JButton("Audio 2");
 		btnAudio2.addActionListener(new ActionListener() {
