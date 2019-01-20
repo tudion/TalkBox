@@ -15,7 +15,6 @@ import java.nio.file.Path;
  *
  */
 public interface TalkBoxConfiguration extends Serializable {
-
     /**
      * Returns the number of physical buttons that when pressed will play an audio file.
      * 
