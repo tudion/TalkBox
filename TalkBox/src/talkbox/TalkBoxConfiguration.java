@@ -52,4 +52,5 @@ public interface TalkBoxConfiguration extends Serializable {
      */
     public String[][] getAudioFileNames();
     
+    
 }
