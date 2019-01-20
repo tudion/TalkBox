@@ -9,7 +9,8 @@ public class Testing {
 		System.out.println("Just another test");
 		System.out.println("try pulling this");
 		System.out.println("push test");
-                System.out.println("Dion is using netbeans now!");
+        System.out.println("Dion is using netbeans now!");
+        System.out.println("With eclipse");
 	}
 
 }
