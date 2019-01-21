@@ -11,7 +11,7 @@ public class Testing {
 		System.out.println("push test");
         System.out.println("Dion is using netbeans now!");
         System.out.println("With eclipse");
-        System.out.println("World");
+        // hello
 	}
 
 }

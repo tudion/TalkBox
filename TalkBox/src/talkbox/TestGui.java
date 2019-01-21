@@ -36,6 +36,8 @@ public class TestGui {
 				}
 			}
 		});
+		System.out.println("rosh is awesome");
+		System.out.println("dion and ashish are awesome");
 	}
 
 	/**
