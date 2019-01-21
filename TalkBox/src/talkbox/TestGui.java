@@ -18,6 +18,9 @@ import java.awt.FlowLayout;
 public class TestGui {
 
 	private JFrame frmTalkbox;
+	private final String firstAudioName = "voice_recording_1.wav";
+	private final String secondAudioName = "voice_recording_2.wav";
+	private final String thirdAudioName = "voice_recording_3.wav";
 
 	/**
 	 * Launch the application.
@@ -58,19 +61,7 @@ public class TestGui {
 		JButton btnAudio1 = new JButton("Audio 1");
 		btnAudio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				try {
-					String filename = "C:/Users/Dion/Desktop/Voice_Recorder/voice_recording_2.wav";
-					// opens audio input stream
-					File soundFile = new File(filename);
-					AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);		
-					// get a sound clip resource
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioIn);
-					clip.start();
-				}
-				catch (Exception e) {
-					e.printStackTrace();
-				}
+				playSoundFile(System.getProperty("user.dir") + "/src/talkbox/AudioFiles/" + firstAudioName);
 			}
 		});
 		panel.add(btnAudio1);
@@ -78,19 +69,7 @@ public class TestGui {
 		JButton btnAudio2 = new JButton("Audio 2");
 		btnAudio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				try {
-					String filename = "C:/Users/Dion/Desktop/Voice_Recorder/voice_recording_2.wav";
-					// opens audio input stream
-					File soundFile = new File(filename);
-					AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);		
-					// get a sound clip resource
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioIn);
-					clip.start();
-				}
-				catch (Exception e) {
-					e.printStackTrace();
-				}
+				playSoundFile(System.getProperty("user.dir") + "/src/talkbox/AudioFiles/" + secondAudioName);
 			}
 		});
 		panel.add(btnAudio2);
@@ -98,22 +77,26 @@ public class TestGui {
 		JButton btnAudio3 = new JButton("Audio 3");
 		btnAudio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				try {
-					String filename = "C:/Users/Dion/Desktop/Voice_Recorder/voice_recording_2.wav";
-					// opens audio input stream
-					File soundFile = new File(filename);
-					AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);		
-					// get a sound clip resource
-					Clip clip = AudioSystem.getClip();
-					clip.open(audioIn);
-					clip.start();
-				}
-				catch (Exception e) {
-					e.printStackTrace();
-				}
+				playSoundFile(System.getProperty("user.dir") + "/src/talkbox/AudioFiles/" + thirdAudioName);
 			}
 		});
 		panel.add(btnAudio3);
+		
+	}
+	
+	private void playSoundFile (String filename) {
+		try {
+			// opens audio input stream
+			File soundFile = new File(filename);
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);		
+			// get a sound clip resource
+			Clip clip = AudioSystem.getClip();
+			clip.open(audioIn);
+			clip.start();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
