@@ -36,6 +36,7 @@ public class TestGui {
 				}
 			}
 		});
+		System.out.println("rosh is awesome");
 	}
 
 	/**
