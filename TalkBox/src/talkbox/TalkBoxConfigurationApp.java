@@ -47,6 +47,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 	 * Create the frame.
 	 */
 	public TalkBoxConfigurationApp() {
+		setTitle("TalkBox Configuration");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -103,5 +104,12 @@ public class TalkBoxConfigurationApp extends JFrame {
 			}
 		});
 		panel_3.add(btnConfigure);
+		
+		JLabel lblNewLabel = new JLabel("Delete This label and put configure buttons here");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		panel.add(lblNewLabel, BorderLayout.CENTER);
+		
+		JLabel lblNewLabel_1 = new JLabel("Placeholder.");
+		panel.add(lblNewLabel_1, BorderLayout.WEST);
 	}
 }
