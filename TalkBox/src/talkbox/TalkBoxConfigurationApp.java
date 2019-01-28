@@ -49,7 +49,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 	public TalkBoxConfigurationApp() {
 		setTitle("TalkBox Configuration");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 594, 405);
+		setBounds(100, 100, 774, 425);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
