@@ -49,7 +49,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 	public TalkBoxConfigurationApp() {
 		setTitle("TalkBox Configuration");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 594, 405);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -74,6 +74,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 		panel_2.setLayout(new GridLayout(0, 1, 0, 0));
 		
 		JTextArea txtrInstructions1 = new JTextArea();
+		txtrInstructions1.setEditable(false);
 		txtrInstructions1.setBackground(SystemColor.control);
 		txtrInstructions1.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		txtrInstructions1.setWrapStyleWord(true);
@@ -82,6 +83,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 		panel_2.add(txtrInstructions1);
 		
 		JTextArea txtrInstructions2 = new JTextArea();
+		txtrInstructions2.setEditable(false);
 		txtrInstructions2.setBackground(SystemColor.control);
 		txtrInstructions2.setLineWrap(true);
 		txtrInstructions2.setWrapStyleWord(true);
