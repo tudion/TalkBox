@@ -107,7 +107,7 @@ public class TalkBoxConfigurationApp extends JFrame {
 		});
 		panel_3.add(btnConfigure);
 		
-		JLabel lblNewLabel = new JLabel("Delete This label and put configure buttons here");
+		JLabel lblNewLabel = new JLabel("Delete This label and put configure Buttons here");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel, BorderLayout.CENTER);
 		
